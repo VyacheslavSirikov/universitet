@@ -17,4 +17,4 @@ if c1 % 1 != 0:
     c1 = c1+1
 
 print('Нужное кол-во парт')
-print(int(a1)+int(b1)+int(c1))
+print(int(a1) + int(b1) + int(c1))
