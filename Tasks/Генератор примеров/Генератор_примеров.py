@@ -6,17 +6,24 @@ while a == 1:
     lives = 3
     print('Кол-во жизней = ', lives)
 
-    d = random.randint(0, 1000)
-    c = random.randint(0, 1000)
-    r = random.randint(0, 1)
+    d = random.randint(0, 10)
+    c = random.randint(0, 10)
+    r = random.randint(0, 3)
     o = 0
     f = 0
+
     if r == 0:
         f = ' - '
         o = d - c
-    else:
+    if r == 1:
         f = ' + '
         o = d + c
+    if r == 2:
+        f = ' * '
+        o = d * c
+    if r == 3:
+        f = ' // '
+        o = d // c
 
     while lives > 0:
 
