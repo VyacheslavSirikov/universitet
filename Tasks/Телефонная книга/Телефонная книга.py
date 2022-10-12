@@ -35,7 +35,7 @@ def get_num():
         return num
 
     if num[0] == "8" and len(num) == 11:
-        num = "+7" + num
+        num = "+7" + num[1:]
         return num
 
     if num[0] == "7" and len(num) == 11:
@@ -52,7 +52,7 @@ def get_num():
 
 def get_contact(listcontact, name, num):
     listcontact[name] = num
-    print ("Контакт добавлен")
+    print ("Контакт добавлен\n")
     return listcontact
 
 
@@ -69,6 +69,7 @@ def menu():
         p = int(input())
 
         if p == 1:
+            print('Введите имя')
             get_contact(listcontact, getname(), get_num())
 
         if p == 2:
