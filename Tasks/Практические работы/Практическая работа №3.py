@@ -8,12 +8,10 @@ while a == 1:
     ws = '\u25A0\u25A0\u25A0\u25A0\u25A0'
     ws_s = ['\u25A0', '\u25A0', '\u25A0', '\u25A0', '\u25A0', ]
 
-    print(f)
     wn = (random.randint(0, f))
     word = words[wn]
 
     words.remove(word)
-    print(words)
 
     letters = []
     for i in word:
