@@ -54,16 +54,17 @@ while a == 1:
                 break
             else:
                 print('вы не угадали!')
+                if count_letters == 1:
+                    if word.find(g_letter) != -1:
+                        for i in range(len(ws_s)):
+                            if letters[i] == g_letter:
+                                ws_s[i] = letters[i]
+                            else:
+                                if ws_s[i] == '\u25A0':
+                                    ws_s[i] = ws[i]
                 lives -= 1
 
-        if count_letters == 1:
-            if word.find(g_letter) != -1:
-                for i in range(len(ws_s)):
-                    if letters[i] == g_letter:
-                        ws_s[i] = letters[i]
-                    else:
-                        if ws_s[i] == '\u25A0':
-                            ws_s[i] = ws[i]
+
             else:
                 print('вы не угадали!')
                 lives -= 1
